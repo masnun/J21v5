@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^u/(.*)$ public.php?view=$1 [QSA,L]
+
+AddType application/vnd.symbian.install sis
+AddType video/3gpp 3gp
+AddType application/octet-stream sisx
+AddType application/java-archive jar
+AddType text/vnd.sun.j2me.app-descriptor jad
+AddType application/vnd.wap.mms-message mms
+
+
